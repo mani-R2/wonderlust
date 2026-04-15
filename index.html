@@ -25,7 +25,7 @@
         <p>Specializing in unforgettable experiences, we offer curated trips to the breathtaking island of Majorca, a hidden gem in the Mediterranean. Whether you crave sun-drenched beaches, charming villages, or thrilling outdoor adventures, our expert team will craft the perfect itinerary tailored just for you.</p>
     </header>
     <nav>
-        Main Navigation
+        <h2>Main Navigation</h2>
         <input type="checkbox" id="dropdown">
         <label for="dropdown"><span></span></label>
         <ul>
@@ -42,13 +42,13 @@
         <article>
             <h2>Majorca</h2>
             <section id="intro">
-
+                <h2>Introduction</h2>
                 <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
                 <div>
                     <picture>
-                        <source media="(min-width: 404px)" srcset="images/majorca-beach-square-s.jpg"/>
-                        <source media="(min-width: 920px)" srcset="images/majorca-beach-vertical-m.jpg"/>
                         <source media="(min-width: 1280px)" srcset="images/majorca-beach-horizontal-l.jpg"/>
+                        <source media="(min-width: 920px)" srcset="images/majorca-beach-vertical-m.jpg"/>
+                        <source media="(min-width: 404px)" srcset="images/majorca-beach-square-s.jpg"/>
                         <img src="images/majorca-beach-square-s.jpg" alt="Majorca Beach"/>
                     </picture>
 
@@ -112,7 +112,11 @@
                     srcset="
                     images/miranda-blake-S.png 404w,
                     images/miranda-blake-M.png 920w,
-                    images/miranda-blake-L.png 1280w">
+                    images/miranda-blake-L.png 1280w"
+                sizes="
+                (min-width: 1280px) 300px,
+                (min-width: 920px) 200px,
+                100vw">
 
                     <!--Responsive Image for resolution switching
                         images/miranda-blake-L.png" 
@@ -121,7 +125,7 @@
                         images/miranda-blake-L.png 1280w
                     -->
                         <div>
-                        <h4>Miranda Blake</h4>
+                        <h3>Miranda Blake</h3>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>London, England</dd>
@@ -131,9 +135,13 @@
                 </section>
                 <section>
                     <img alt="Max Winter"
-                    srcset="image/max-winter-S.png 404w,
+                    srcset="images/max-winter-S.png 404w,
                     images/max-winter-M.png 920w,
-                    images/max-winter-L.png 1280w">
+                    images/max-winter-L.png 1280w"
+                    sizes="
+                    (min-width: 1280px) 300px,
+                    (min-width: 920px) 200px,
+                    100vw">
 
                     <!--Responsive Image for resolution switching
                         images/max-winter-L.png
@@ -142,7 +150,7 @@
                         images/max-winter-L.png 1280w
                     -->
                         <div>
-                        <h4>Max Winter</h4>
+                        <h3>Max Winter</h3>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>Berlin, Germany</dd>
@@ -154,7 +162,11 @@
                     <img alt="Inés Villegoes"
                     srcset="images/ines-villegoes-S.png 404w,
                     images/ines-villegoes-M.png 920w,
-                    images/ines-villegoes-L.png 1280w">
+                    images/ines-villegoes-L.png 1280w"
+                    sizes="
+                    (min-width: 1280px) 300px,
+                    (min-width: 920px) 200px,
+                    100vw">
 
                     <!--Responsive Image for resolution switching
                         images/ines-villegoes-L.png
@@ -163,7 +175,7 @@
                         images/ines-villegoes-L.png 1280w 
                     -->
                     <div>
-                        <h4>Inés Villegoes</h4>
+                        <h3>Inés Villegoes</h3>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>Barcelona, Spain</dd>
@@ -175,7 +187,11 @@
                     <img alt="Carmen Lorenzo"
                     srcset="images/carmen-lorenzo-S.png 404w,
                     images/carmen-lorenzo-M.png 920w,
-                    images/carmen-lorenzo-L.png 1280w">
+                    images/carmen-lorenzo-L.png 1280w"
+                    sizes="
+                    (min-width: 1280px) 300px,
+                    (min-width: 920px) 200px,
+                    100vw">
 
                     <!--Responsive Image for resolution switching
                         images/carmen-lorenzo-L.png
@@ -184,7 +200,7 @@
                         images/carmen-lorenzo-L.png 1280w
                     -->
                         <div>
-                        <h4>Carmen Lorenzo</h4>
+                        <h3>Carmen Lorenzo</h3>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>Madrid, Spain</dd>
@@ -256,7 +272,7 @@
             </section>
         </article>
     </main>
-    <footer>
+
         <section id="contact-us">
             <h2>Contact Us</h2>
             <span id="required">(*required)</span>
@@ -355,11 +371,12 @@
 
                 <button type="submit">Submit</button>
             </form>
-            
         </section>
+
+    <footer>
         <section id="legal">
-            Legal
-            <small>Copyright 2021 Wonderlust</small>
+            <h2>Legal</h2>
+            <p>&copy; 2021 Wonderlust</p>
             <a href="#">Privacy Statement</a>
             <a href="#">Terms of Service</a>
         </section>
