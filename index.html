@@ -260,37 +260,70 @@
         <section id="contact-us">
             <h2>Contact Us</h2>
             <span id="required">(*required)</span>
+            <form action="/submit" method="post">
             
                 <div>
-                    <label>First Name<span>*</span></label>
-                    <input>
+                    <label for="first-name">First Name<span>*</span></label>
+                    <input
+                        type="text"
+                        id="first-name"
+                        name="first-name"
+                        required>
                 </div>
                 <div>
-                    <label>Last Name<span>*</span></label>
-                    <input>
+                    <label for="last-name">Last Name<span>*</span></label>
+                    <input
+                        type="text"
+                        id="last-name"
+                        name="last-name"
+                        required>
                 </div>
                 <div>
-                    <label>Email<span>*</span></label>
-                    <input>
+                    <label for="email">Email<span>*</span></label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required>
                 </div>
                 <div>
-                    <label>Phone<span>*</span></label>
-                    <input>
+                    <label for="phone">Phone<span>*</span></label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        required>
                 </div>
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
                     <div> 
-                        <input>
-                        <label>Email</label>
+                        <input
+                            type="radio"
+                            id="email-contact"
+                            name="preferred-contact"
+                            value="email"
+                            required>
+                        <label for="email-contact">Email</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Text</label>
+                        <input
+                            type="radio"
+                            id="text-contact"
+                            name="preferred-contact"
+                            value="text"
+                            required>
+                        <label for="text-contact">Text</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Phone</label>
+                        <input
+                            type="radio"
+                            id="phone-contact"
+                            name="preferred-contact"
+                            value="phone"
+                            required>
+                        <label for="phone-contact">Phone</label>
                     </div>
+
                 </fieldset>
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
@@ -307,6 +340,7 @@
                         <option>Other</option>
                     </select>
                 </fieldset>
+
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
                     <select id="select-travel-time">
@@ -318,7 +352,9 @@
                         <option>Flexible</option>
                     </select>
                 </fieldset>
-                <input>
+
+                <button type="submit">Submit</button>
+            </form>
             
         </section>
         <section id="legal">
